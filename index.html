@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 1 Modul 1</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .form .input {
+        margin-bottom: 15px;
+      }
+
+      .form .input span {
+        display: inline-block;
+        width: 100px;
+        color: #555;
+      }
+
+      .form .input input[type="text"],
+      .form .input input[type="file"],
+      .form .input select,
+      .form .input textarea {
+        width: calc(100% - 120px);
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .form .input input[type="radio"] {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      button[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>FORM HTML</h1>
+      <form class="form" method="POST" action="" enctype="multipart/form-data">
+        <div class="input">
+          <span>Nama: </span>
+          <input type="text" name="nama" />
+        </div>
+        <div class="input">
+          <span>Gender: </span>
+          <input type="radio" name="gender" value="Laki-laki" /><span
+            >Laki-laki
+          </span>
+          <input type="radio" name="gender" value="Perempuan" /><span
+            >Perempuan</span
+          >
+        </div>
+        <div class="input">
+          <span>Alamat: </span>
+          <input type="text" name="alamat" />
+        </div>
+        <div class="input">
+          <span>Negara: </span>
+          <select name="negara">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Entropy">Entropy</option>
+            <option value="Wonderland">Wonderland</option>
+          </select>
+        </div>
+        <div class="input">
+          <span>Foto: </span>
+          <input type="file" name="upload" />
+        </div>
+        <div class="input">
+          <span>Komentar: </span>
+          <textarea name="komentar"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
